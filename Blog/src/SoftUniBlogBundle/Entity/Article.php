@@ -111,8 +111,15 @@ class Article
 
     public function setSummary()
     {
-        if (strlen($this->content < 20))
-        $this->summary= substr($this->getContent(), 0, 20) . "...";
+
+        if (strlen($this->content) < 20)
+        {
+            $this->summary= substr($this->getContent(), 0, 20);
+        }
+        else
+        {
+            $this->summary= substr($this->getContent(), 0, 20) . "...";
+        }
     }
 
     /**
