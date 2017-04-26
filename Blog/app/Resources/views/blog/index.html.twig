@@ -4,7 +4,7 @@
     <div class="container body-content">
         <div class="row">
             {% for article in articles %}
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <article>
                         <header>
                             <h2>{{ article.title }}</h2>
@@ -21,7 +21,7 @@
                         <footer>
                             <div class="pull-right">
                                 <a class="btn btn-default btn-xs"
-                                   href="#">Read more &raquo;</a>
+                                   href="{{ path('article_view', {'id' : article.id}) }}">Add Comment &raquo;</a>
                             </div>
                         </footer>
                     </article>

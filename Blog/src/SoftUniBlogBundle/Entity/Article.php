@@ -62,6 +62,7 @@ class Article
      */
     private $author;
 
+
     /**
      * @return User
      */
