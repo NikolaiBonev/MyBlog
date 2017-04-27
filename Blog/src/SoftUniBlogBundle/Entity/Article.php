@@ -3,7 +3,6 @@
 namespace SoftUniBlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Doctrine\ORM\Query\Expr\Select;
 
 /**
  * Article
@@ -41,7 +40,7 @@ class Article
      *
      * @ORM\Column(name="dateAdded", type="datetime")
      */
-    public $dateAdded;
+    private $dateAdded;
 
     /**
      * @var string
@@ -50,6 +49,7 @@ class Article
 
     /**
      * @var int
+     *
      * @ORM\Column(name="authorId", type="integer")
      */
     private $authorId;
@@ -59,13 +59,28 @@ class Article
      *
      * @ORM\ManyToOne(targetEntity="SoftUniBlogBundle\Entity\User", inversedBy="articles")
      * @ORM\JoinColumn(name="authorId", referencedColumnName="id")
-     *
      */
     private $author;
 
+    public function __construct()
+    {
+        $this->dateAdded = new \DateTime('now');
+    }
 
     /**
-     * @return User
+     * @param \SoftUniBlogBundle\Entity\User $author
+     *
+     * @return Article
+     */
+    public function setAuthor(User $author = null)
+    {
+        $this->author = $author;
+
+        return $this;
+    }
+
+    /**
+     * @return \SoftUniBlogBundle\Entity\User
      */
     public function getAuthor()
     {
@@ -73,12 +88,14 @@ class Article
     }
 
     /**
-     * @param User $author
+     * @param integer $authorId
+     *
      * @return Article
      */
-    public function setAuthor(User $author = null)
+    public function setAuthorId($authorId)
     {
-        $this->author = $author;
+        $this->authorId = $authorId;
+
         return $this;
     }
 
@@ -91,38 +108,32 @@ class Article
     }
 
     /**
-     * @param $authorId
-     * @return Article
-     */
-    public function setAuthorId($authorId)
-    {
-        $this->authorId = $authorId;
-
-        return $this;
-    }
-    /**
      * @return string
      */
-    public function getSummary ()
+    public function getSummary()
     {
-        if ($this->summary === null){
+        if($this->summary === null)
+        {
             $this->setSummary();
         }
         return $this->summary;
     }
 
-    public function setSummary()
+    /**
+     * @param string
+     */
+    private function setSummary()
     {
-
-        if (strlen($this->content) < 20)
-        {
-            $this->summary= substr($this->getContent(), 0, 20);
-        }
+         if (strlen($this->content) < 20)
+            {
+                    $this->summary= substr($this->getContent(), 0, 20);
+            }
         else
-        {
-            $this->summary= substr($this->getContent(), 0, 20) . "...";
-        }
+         {
+             $this->summary= substr($this->getContent(), 0, 20) . "...";
+         }
     }
+
 
     /**
      * Get id
@@ -183,6 +194,8 @@ class Article
     }
 
     /**
+     * Set dateAdded
+     *
      * @param \DateTime $dateAdded
      *
      * @return Article
@@ -194,10 +207,6 @@ class Article
         return $this;
     }
 
-    public function __construct()
-    {
-        $this->dateAdded = new \DateTime('now');
-    }
     /**
      * Get dateAdded
      *
@@ -207,7 +216,5 @@ class Article
     {
         return $this->dateAdded;
     }
-
-
 }
 

@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+<h2 class="text-center">Are you sure to delete this article?</h2>
+    <div>
+        <a class="btn btn-default btn-xs" href="{{ path('blog_index') }}">No</a>
+        <a class="btn btn-default btn-xs" href="{{ path('article_confirm_delete', {id: id}) }}">Yes</a>
+    </div>
+{% endblock %}
+

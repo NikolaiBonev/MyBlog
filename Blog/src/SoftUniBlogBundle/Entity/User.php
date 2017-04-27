@@ -46,9 +46,15 @@ class User implements UserInterface
 
     /**
      * @var ArrayCollection
+     *
      * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Article", mappedBy="author")
      */
     private $articles;
+
+    public function __construct()
+    {
+        $this->articles = new ArrayCollection();
+    }
 
     /**
      * @return \Doctrine\Common\Collections\Collection
@@ -59,12 +65,14 @@ class User implements UserInterface
     }
 
     /**
-     * @param Article $articles
+     * @param \SoftUniBlogBundle\Entity\Article $article
+     *
      * @return User
      */
-    public function addPost(Article $articles)
+    public function addPost(Article $article)
     {
-        $this->articles[] = $articles;
+        $this->articles[] = $article;
+
         return $this;
     }
 
@@ -104,7 +112,10 @@ class User implements UserInterface
     }
 
     /**
+     * Set fullName
+     *
      * @param string $fullName
+     *
      * @return User
      */
     public function setFullName($fullName)
@@ -115,6 +126,8 @@ class User implements UserInterface
     }
 
     /**
+     * Get fullName
+     *
      * @return string
      */
     public function getFullName()
@@ -200,63 +213,9 @@ class User implements UserInterface
         // TODO: Implement eraseCredentials() method.
     }
 
-
-
-	function __toString()
+    function __toString()
     {
         return $this->fullName;
     }
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="proff", type="string", length=255)
-     */
-    private $proff;
-
-    /**
-     * @param string $proff
-     * @return User
-     */
-    public function setProff($proff)
-    {
-        $this->proff = $proff;
-
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getproff()
-    {
-        return $this->proff;
-    }
-
-    /**
-     * @var int
-     * @ORM\Column(name="age", type="integer")
-     */
-    private $age;
-
-    /**
-     * @param $age
-     * @return User
-     */
-    public function setAge($age)
-    {
-        $this->age = $age;
-
-        return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getage()
-    {
-        return $this->age;
-    }
-
 }
 
