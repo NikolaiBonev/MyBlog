@@ -67,4 +67,21 @@ class UserController extends Controller
         $user = $this->getUser();
         return $this->render("user/profile.html.twig", ['user'=>$user]);
     }
+
+    /**
+     * @Route("/profile/{id}", name="user_view")
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function viewProfile($id)
+    {
+        $user = $this->getDoctrine()->getRepository(User::class)->find($id);
+        if ($user === null)
+        {
+            echo "<script>alert('There is no such user');
+                    window.location.href='/'</script>";
+        }
+
+        return $this->render('user/profile.html.twig', ['user' => $user]);
+    }
 }

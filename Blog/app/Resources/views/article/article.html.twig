@@ -14,12 +14,10 @@
                 </p>
 
                 <small class="author">
-                    {{ article.author }}
+                    <a href="{{ path('user_view') }}">{{ article.author }}</a>
                 </small>
-
                 <footer>
                     <div class="pull-right">
-
                         {% if app.getUser() and (app.getUser().isAuthor(article) or app.getUser().isAdmin()) %}
                         <a class="btn btn-danger btn-xs" href="{{ path('article_delete', {'id' : article.id}) }}">Delete</a>
                         <a class="btn btn-warning btn-xs" href="{{ path('article_edit', {'id' : article.id}) }}">Edit</a>

@@ -22,6 +22,11 @@ class User implements UserInterface
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+    /**
+     * @var int
+     * @ORM\Column(name="age", type="integer")
+     */
+    private $age;
 
     /**
      * @var string
@@ -36,6 +41,13 @@ class User implements UserInterface
      * @ORM\Column(name="fullName", type="string", length=255)
      */
     private $fullName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="profession", type="string", length=255)
+     */
+    private $profession;
 
     /**
      * @var string
@@ -134,6 +146,48 @@ class User implements UserInterface
     public function getFullName()
     {
         return $this->fullName;
+    }
+
+    /**
+     * @param string $profession
+     *
+     * @return User
+     */
+    public function setProfession($profession)
+    {
+        $this->profession = $profession;
+
+        return $this;
+    }
+
+    /**
+     * Get fullName
+     *
+     * @return string
+     */
+    public function getprofession()
+    {
+        return $this->profession;
+    }
+
+    /**
+     * @param int $age
+     *
+     * @return User
+     */
+    public function setage($age)
+    {
+        $this->age = $age;
+
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getage()
+    {
+        return $this->age;
     }
 
     /**

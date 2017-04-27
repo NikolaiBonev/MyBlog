@@ -5,6 +5,7 @@ namespace SoftUniBlogBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use SoftUniBlogBundle\Entity\Article;
+use SoftUniBlogBundle\Entity\User;
 use SoftUniBlogBundle\Form\ArticleType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -54,9 +55,10 @@ class ArticleController extends Controller
                     echo "<script>alert('There is no such article');
                     window.location.href='/'</script>";
                 }
-
-        return $this->render('article/article.html.twig', ['article' => $article]);
+                $userid = $this->getDoctrine()->getRepository(Article::class)->find($id);
+        return $this->render('article/article.html.twig', ['article' => $article, 'id' => $userid]);
     }
+
 
     /**
      * @Route("/article/edit/{id}", name="article_edit")
