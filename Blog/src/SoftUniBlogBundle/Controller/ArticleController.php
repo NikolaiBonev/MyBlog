@@ -76,6 +76,13 @@ class ArticleController extends Controller
             echo "<script>alert('There is no such article');
                     window.location.href='/'</script>";
         }
+        $currentUser= $this->getUser();
+        if (!$currentUser->isAuthor($article) && !$currentUser->isAdmin())
+        {
+            echo "<script>alert('Access denied!');
+                    window.location.href='/'</script>";
+        }
+
         $form = $this->createForm(ArticleType::class, $article);
         $form->handleRequest($request);
         if ($form->isValid() && $form->isSubmitted())
@@ -110,6 +117,12 @@ class ArticleController extends Controller
             echo "<script>alert('There is no such article');
                     window.location.href='/'</script>";
         }
+        $currentUser= $this->getUser();
+        if (!$currentUser->isAuthor($article) && !$currentUser->isAdmin())
+        {
+            echo "<script>alert('Access denied!');
+                    window.location.href='/'</script>";
+        }
         $form = $this->createForm(ArticleType::class, $article);
         $form->handleRequest($request);
         if ($form->isValid() && $form->isSubmitted())
@@ -138,6 +151,12 @@ class ArticleController extends Controller
         if ($article === null)
         {
             echo "<script>alert('There is no such article');
+                    window.location.href='/'</script>";
+        }
+        $currentUser= $this->getUser();
+        if (!$currentUser->isAuthor($article) && !$currentUser->isAdmin())
+        {
+            echo "<script>alert('Access denied!');
                     window.location.href='/'</script>";
         }
         $data = $this->getDoctrine()->getManager();

@@ -54,6 +54,7 @@ class User implements UserInterface
     public function __construct()
     {
         $this->articles = new ArrayCollection();
+        $this->roles = new ArrayCollection();
     }
 
     /**
@@ -177,7 +178,25 @@ class User implements UserInterface
      */
     public function getRoles()
     {
-        return ['ROLE_USER'];
+        $stringRoles = [];
+        foreach ($this ->roles as $role)
+        {
+            /**
+             * @var $role Role
+             */
+            $stringRoles[] = $role->getRole();
+        }
+        return $stringRoles;
+    }
+
+    /**
+     * @param \SoftUniBlogBundle\Entity\Role $role
+     * @return User
+     */
+    public function addRole(Role $role)
+    {
+        $this->roles[] = $role;
+        return $this;
     }
 
     /**
@@ -216,6 +235,33 @@ class User implements UserInterface
     function __toString()
     {
         return $this->fullName;
+    }
+
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\ManyToMany(targetEntity="SoftUniBlogBundle\Entity\Role")
+     * @ORM\JoinTable(name="users_roles",
+     *     joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
+     *     inverseJoinColumns={@ORM\JoinColumn(name="role_id", referencedColumnName="id")})
+     */
+    private $roles;
+
+    /**
+     * @param Article $article
+     * @return bool
+     */
+    public function isAuthor(Article $article)
+    {
+        return $article->getAuthor() === $this->getId();
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAdmin()
+    {
+        return in_array("ROLE_ADMIN", $this->getRoles());
     }
 }
 
