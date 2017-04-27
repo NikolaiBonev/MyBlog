@@ -7056,3 +7056,8 @@ article .author  {
 article .author  {
   content: '\2014 \00A0';
 }
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}

@@ -3,6 +3,7 @@
 namespace SoftUniBlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Query\Expr\Select;
 
 /**
  * Article
@@ -40,7 +41,7 @@ class Article
      *
      * @ORM\Column(name="dateAdded", type="datetime")
      */
-    private $dateAdded;
+    public $dateAdded;
 
     /**
      * @var string
@@ -182,8 +183,6 @@ class Article
     }
 
     /**
-     * Set dateAdded
-     *
      * @param \DateTime $dateAdded
      *
      * @return Article

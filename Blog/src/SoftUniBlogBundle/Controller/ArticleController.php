@@ -48,6 +48,26 @@ class ArticleController extends Controller
     public function viewArticle($id)
     {
         $article = $this->getDoctrine()->getRepository(Article::class)->find($id);
+
+        if ($article == null)
+        {
+            echo "<script>alert('There is no such article');
+            window.location.href='/'</script>";
+        }
         return $this->render('article/article.html.twig', ['article' => $article]);
     }
+    public function editArticle($id, Request $request)
+    {
+        $article = $this->getDoctrine()->getRepository(ArticleType::class)->find($id);
+
+        if ($article == null)
+        {
+            echo "<script>alert('There is no such article');
+            window.location.href='/'</script>";
+        }
+        return $this->render('article/edit.html.twig', [
+            'article'=> $article
+        ]);
+    }
+
 }
