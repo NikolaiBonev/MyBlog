@@ -24,7 +24,7 @@
       <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
+            <state relative-caret-position="-1028">
               <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
               <folding />
             </state>
@@ -34,21 +34,9 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2234">
-              <caret line="173" column="17" lean-forward="false" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
+            <state relative-caret-position="190">
+              <caret line="309" column="57" lean-forward="false" selection-start-line="309" selection-start-column="57" selection-end-line="309" selection-end-column="57" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Form/UserType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-              <folding>
-                <element signature="e#41#77#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -56,13 +44,24 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="547">
+              <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
               <folding>
                 <element signature="e#539#739#0#PHP" expanded="false" />
-                <element signature="e#2190#2214#0#PHP" expanded="true" />
-                <element signature="e#2694#2718#0#PHP" expanded="true" />
+                <element signature="e#2192#2216#0#PHP" expanded="true" />
+                <element signature="e#2696#2720#0#PHP" expanded="true" />
+                <marker date="1493363111315" expanded="true" signature="2567:2652" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,8 +81,8 @@
       <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Controller/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="58" selection-end-column="100" />
+            <state relative-caret-position="281">
+              <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
               <folding>
                 <element signature="e#48#107#0#PHP" expanded="true" />
                 <element signature="e#3200#3224#0#PHP" expanded="true" />
@@ -100,17 +99,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/article/article.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="78" />
+            <state relative-caret-position="210">
+              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="4539" column="16" lean-forward="false" selection-start-line="4539" selection-start-column="16" selection-end-line="4539" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>btn-de</find>
+      <find>navbar</find>
+      <find>navbar-default</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -122,7 +138,6 @@
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/_flash_messages.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/form/fields.html.twig" />
         <option value="$PROJECT_DIR$/var/cache/dev/templates.php" />
@@ -142,15 +157,16 @@
         <option value="$PROJECT_DIR$/app/Resources/views/article/delete.html.twig" />
         <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/Role.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/register.html.twig" />
-        <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/profile.html.twig" />
         <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/Article.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Form/ArticleType.php" />
-        <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Controller/UserController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/article/article.html.twig" />
         <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Controller/ArticleController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/article/article.html.twig" />
+        <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
       </list>
     </option>
   </component>
@@ -196,6 +212,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -542,15 +590,15 @@
       <workItem from="1477900035607" duration="196000" />
       <workItem from="1477900309159" duration="466000" />
       <workItem from="1493313107683" duration="1951000" />
-      <workItem from="1493315143117" duration="19892000" />
+      <workItem from="1493315143117" duration="22118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48766000" />
+    <option name="totallyTimeSpent" value="50992000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -558,7 +606,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32470334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32470334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38727078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -636,7 +684,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js" />
-    <entry file="file://$PROJECT_DIR$/web/css/style.css" />
     <entry file="file://$PROJECT_DIR$/app/AppCache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -844,27 +891,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="42" column="62" lean-forward="false" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Form/ArticleType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <element signature="e#42#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
+        <state relative-caret-position="-1028">
           <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
           <folding />
         </state>
@@ -880,30 +909,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2234">
-          <caret line="173" column="17" lean-forward="false" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="85" selection-end-column="5" />
+        <state relative-caret-position="547">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
           <folding>
             <element signature="e#539#739#0#PHP" expanded="false" />
-            <element signature="e#2190#2214#0#PHP" expanded="true" />
-            <element signature="e#2694#2718#0#PHP" expanded="true" />
+            <element signature="e#2192#2216#0#PHP" expanded="true" />
+            <element signature="e#2696#2720#0#PHP" expanded="true" />
+            <marker date="1493363111315" expanded="true" signature="2567:2652" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Controller/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="58" selection-end-column="100" />
+        <state relative-caret-position="281">
+          <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
           <folding>
             <element signature="e#48#107#0#PHP" expanded="true" />
             <element signature="e#3200#3224#0#PHP" expanded="true" />
@@ -919,10 +941,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/article/article.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Form/ArticleType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="78" />
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="e#42#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SoftUniBlogBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="309" column="57" lean-forward="false" selection-start-line="309" selection-start-column="57" selection-end-line="309" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/article/article.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="4539" column="16" lean-forward="false" selection-start-line="4539" selection-start-column="16" selection-end-line="4539" selection-end-column="16" />
           <folding />
         </state>
       </provider>

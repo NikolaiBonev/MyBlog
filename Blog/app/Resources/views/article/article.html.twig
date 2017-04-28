@@ -14,7 +14,8 @@
                 </p>
 
                 <small class="author">
-                    <a href="{{ path('user_view') }}">{{ article.author }}</a>
+                    <a href="{{ path('user_profile') }}">{{ article.author }}</a>
+                    <p>{{ article.dateAdded|date('Y-m-d') }}</p>
                 </small>
                 <footer>
                     <div class="pull-right">
